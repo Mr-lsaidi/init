@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lsaidi <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/11/05 00:51:13 by lsaidi            #+#    #+#              #
+#    Updated: 2018/11/06 00:44:18 by lsaidi           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+the file that contains the RSA keys of systems are in ".ssh/authorized_keys"
+the private key is in "~/.ssh/id_rsa"
+the public key is in "~/.ssh/id_rsa.pub"

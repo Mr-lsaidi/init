@@ -1,0 +1,35 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lsaidi <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/11/05 00:02:31 by lsaidi            #+#    #+#              #
+#    Updated: 2018/11/05 15:16:21 by lsaidi           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+you can find the installed version of your Debian in the "/etc/os-release"
+
+`````
+RETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+or in "/proc/version"
+
+````
+Linux version 4.9.0-7-amd64 (debian-kernel@lists.debian.org)
+(gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ) 
+#1 SMP Debian 4.9.110-3+deb9u2 (2018-08-13)
+
+or in  /etc/debian_version
+
+9.5
+````

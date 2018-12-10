@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lsaidi <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/11/06 04:30:24 by lsaidi            #+#    #+#              #
+#    Updated: 2018/11/06 04:51:35 by lsaidi           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+mv 04 /etc/cron.daily
+echo "00 00 * * * /etc/cron.daily/04" > /var/spool/cron/crontabs/root
+md5sum /etc/crontab >  /var/newmd5
+if [ -f oldmd5]
+	then 
+		if [ $("diff /var/newmd5 /var/oldmd5") != ""]
+			then mail -s "a file has been modified " root
+			exit 1
+		fi
+fi
+cp /var/newmd5 /var/oldmd5
+
